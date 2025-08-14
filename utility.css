@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(26, 25, 25);
+    color: white;
+    overflow: hidden;
+}
+
+.flex{
+    display: flex;
+}
+
+.coloumn{
+    flex-direction: column;
+}
+
+.justify-content{
+    justify-content: center;
+}
+
+.align-item{
+    align-items: center;
+}
+
+#h{
+    height: 100%;
+    width: 100%;
+}
