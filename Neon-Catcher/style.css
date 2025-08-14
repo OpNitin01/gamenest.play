@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: 'Arial Black', sans-serif;
+    background: rgba(41, 34, 34);
+    color: white;
+    overflow: hidden;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    background: #111;
+    color: cyan;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1.5rem;
+    text-shadow: 0 0 10px cyan;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+canvas {
+    display: block;
+    margin: 20px auto 0 auto;
+    background: linear-gradient(to bottom, #0f0f1e, #1a1a2f);
+    box-shadow: 0 0 30px #000 inset;
+}
+
+.center-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+    /* Adjust for navbar height */
+    text-align: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 15px cyan;
+}
+
+p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    text-shadow: 0 0 10px white;
+}

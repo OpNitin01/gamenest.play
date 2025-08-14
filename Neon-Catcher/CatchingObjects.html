@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Falling Objects Catcher - Neon Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="navbar">🎯 Neon Catcher 🎯</div>
+
+    <div id="home" class="center-screen">
+        <h1>Welcome to Neon Catcher</h1>
+        <p>Press ENTER to Start</p>
+    </div>
+
+    <div id="game-over" class="center-screen" style="display:none;">
+        <h1 style="color:red; text-shadow:0 0 15px red;">💀 Game Over 💀</h1>
+        <p id="final-score"></p>
+        <p>Press ENTER to Restart</p>
+    </div>
+
+    <canvas id="gameCanvas" width="700" height="560" style="display:none;"></canvas>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

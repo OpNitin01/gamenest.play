@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Neon Shooter</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="panel" role="main" aria-label="Neon Shooter game container">
+            <div class="game-area" id="gamebox">
+                <canvas id="game"></canvas>
+                <div class="overlay" id="overlay">
+                    <div class="msg" id="startMsg">
+                        <div class="big">NEON SHOOTER</div>
+                        <div class="tiny">Move with mouse or arrow keys / A D | Shoot: Left click or Spacebar</div>
+                        <div style="height:12px"></div>
+                        <button class="primary" id="startBtn">Start Game</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ui" aria-hidden="false">
+                <div class="title">
+                    <div class="logo">NS</div>
+                    <div>
+                        <h1>Neon Shooter</h1>
+                        <p class="small">Shoot incoming neon enemies — survival arcade</p>
+                    </div>
+                </div>
+
+                <div class="stat-row">
+                    <div class="stat">
+                        <h2 id="score">0</h2>
+                        <p>Score</p>
+                    </div>
+                    <div class="stat">
+                        <h2 id="level">1</h2>
+                        <p>Level</p>
+                    </div>
+                    <div class="stat">
+                        <h2 id="lives">3</h2>
+                        <p>Lives</p>
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <button id="pauseBtn">Pause</button>
+                    <button id="muteBtn">Mute</button>
+                    <button id="restartBtn">Restart</button>
+                </div>
+
+                <div class="hint">
+                    <strong>Tips:</strong> Keep moving, chain kills, and use the edges for tactical dodges.
+                </div>
+
+                <div class="footer">
+                    <div class="small-muted">High score: <span id="highscore">0</span></div>
+                    <div class="small-muted">v1.0 — No downloads</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

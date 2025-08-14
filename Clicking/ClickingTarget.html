@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Target Game</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="navbar">🎯 Neon Target Game 🎯</div>
+
+    <!-- Home Screen -->
+    <div class="home-screen">
+        <h1>Welcome to the Neon Target Game</h1>
+        <p>Click the glowing ball to score points!</p>
+        <p>Press <strong>Enter</strong> to start</p>
+    </div>
+
+    <!-- Game Container -->
+    <div class="game-container">
+        <div class="score">Score: 0</div>
+        <div class="timer">Time: 30s</div>
+        <div class="target"></div>
+    </div>
+
+    <!-- End Screen -->
+    <div class="end-screen hidden">
+        <h1>Game Over!</h1>
+        <p>Your final score is: <span id="final-score">0</span></p>
+        <p>Press <strong>Enter</strong> to play again.</p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #0a0014;
+    /* Dark purple-black background */
+    font-family: Arial, sans-serif;
+    color: white;
+    flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: transparent;
+    color: #c77dff;
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #c77dff, 0 0 20px #9d4edd, 0 0 30px #7b2cbf;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.home-screen,
+.end-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.game-container {
+    position: relative;
+    width: 550px;
+    height: 550px;
+    background-color: #1a0033;
+    border: 3px solid #c77dff;
+    box-shadow: 0 0 15px #c77dff, 0 0 30px #9d4edd;
+    display: none;
+    margin-top: 80px;
+}
+
+.score,
+.timer {
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+    color: #e0aaff;
+    text-shadow: 0 0 10px #c77dff;
+}
+
+.score {
+    top: 10px;
+    left: 10px;
+}
+
+.timer {
+    top: 10px;
+    right: 10px;
+}
+
+.target {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #00ffd9;
+    /* Neon pink target */
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 15px #ff4dff, 0 0 30px #ff4dff;
+    transition: 0.1s;
+}
+
+.hidden {
+    display: none;
+}

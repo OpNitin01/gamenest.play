@@ -1,0 +1,174 @@
+:root {
+    --bg: #0b0b0b;
+    --neon-blue: #87ceeb;
+    --neon-blue-glow: 0 0 8px rgba(135, 206, 235, 0.9), 0 0 24px rgba(135, 206, 235, 0.45);
+    --muted: #111;
+    --glass: rgba(255, 255, 255, 0.03);
+    --font: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(180deg, #050506 0%, #071013 60%);
+    font-family: var(--font);
+    color: #fff;
+}
+
+/* Layout wrapper */
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navigation bar */
+header.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 20px;
+    background: linear-gradient(90deg, rgba(135, 206, 235, 0.04), rgba(0,0,0,0));
+    border-bottom: 1px solid rgba(135, 206, 235, 0.03);
+    position: sticky;
+    top: 0;
+    z-index: 40;
+}
+.brand {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.logo {
+    width: 46px;
+    height: 46px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, var(--neon-blue), #004f6b);
+    box-shadow: var(--neon-blue-glow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+    color: #111;
+}
+.brand h1 {
+    font-size: 18px;
+    margin: 0;
+    letter-spacing: 0.6px;
+    text-shadow: 0 0 6px rgba(135, 206, 235, 0.4);
+}
+.subtitle {
+    font-size: 12px;
+    color: #bbb;
+}
+
+/* Buttons */
+.btn {
+    background: transparent;
+    border: 1px solid rgba(135, 206, 235, 0.15);
+    padding: 8px 12px;
+    border-radius: 8px;
+    color: var(--neon-blue);
+    cursor: pointer;
+    font-weight: 600;
+    backdrop-filter: blur(4px);
+}
+.btn.primary {
+    background: linear-gradient(90deg, rgba(135, 206, 235, 0.16), rgba(135, 206, 235, 0.06));
+    box-shadow: var(--neon-blue-glow);
+    color: #fff;
+    border-color: transparent;
+}
+.btn:hover {
+    transform: scale(1.04);
+}
+
+/* Container + views */
+main.container {
+    display: flex;
+    flex: 1;
+    padding: 18px;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+section.view {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 12px;
+    padding: 18px;
+    display: none;
+    position: relative;
+}
+section.view.active {
+    display: block;
+}
+.home {
+    background: linear-gradient(180deg, rgba(135, 206, 235, 0.03), rgba(135, 206, 235, 0.01));
+    border: 1px solid rgba(135, 206, 235, 0.04);
+    text-align: center;
+    padding: 60px 20px;
+}
+.home .title {
+    font-size: 32px;
+    margin: 18px 0 8px;
+    text-shadow: var(--neon-blue-glow);
+    color: var(--neon-blue);
+}
+.home p {
+    color: #ddd;
+    margin: 8px 0 18px;
+}
+
+/* Game sections */
+.game {
+    background: black;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid rgba(135, 206, 235, 0.03);
+    display: flex;
+    flex-direction: column;
+    min-height: 380px;
+}
+.hud {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 14px;
+    border-bottom: 1px solid rgba(135, 206, 235, 0.02);
+    background: linear-gradient(180deg, rgba(135, 206, 235, 0.02), transparent);
+}
+.hud .score {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--neon-blue);
+    text-shadow: var(--neon-blue-glow);
+}
+.play-area {
+    position: relative;
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+textarea {
+    width: 80%;
+    min-height: 100px;
+    background: transparent;
+    border: 2px solid var(--neon-blue);
+    color: var(--neon-blue);
+    font-size: 1.2rem;
+    padding: 10px;
+    outline: none;
+    resize: none;
+    box-shadow: var(--neon-blue-glow);
+}
+.game-text {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    text-shadow: var(--neon-blue-glow);
+    text-align: center;
+}

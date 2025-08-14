@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Type Racer Pro — Sky Blue Theme</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="app">
+    <!-- Navigation -->
+    <header class="nav">
+        <div class="brand">
+            <div class="logo">TR</div>
+            <div>
+                <h1>Type Racer Pro</h1>
+                <div class="subtitle">Single-page • Sky blue theme</div>
+            </div>
+        </div>
+        <nav class="controls">
+            <button id="nav-home" class="btn">Home</button>
+        </nav>
+    </header>
+
+    <!-- Content -->
+    <main class="container">
+        <!-- Home Screen -->
+        <section id="view-home" class="view home active">
+            <h2 class="title">Type Racer Pro</h2>
+            <p>Test your typing speed and accuracy in two fun modes — Sentence Mode and Word Mode.</p>
+            <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
+                <button id="btnSentence" class="btn primary">Sentence Mode</button>
+                <button id="btnWord" class="btn primary">Word Mode</button>
+            </div>
+        </section>
+
+        <!-- Sentence Mode -->
+        <section id="view-sentence" class="view game">
+            <div class="hud">
+                <div class="score" id="sentenceStats">WPM: 0 | Accuracy: 100% | Time: 0s</div>
+            </div>
+            <div class="play-area">
+                <div id="quote" class="game-text"></div>
+                <textarea id="sentenceInput" placeholder="Start typing here..." disabled></textarea>
+                <div style="margin-top:12px;display:flex;gap:10px;justify-content:center;">
+                    <button id="sentenceStartBtn" class="btn primary">Start Test</button>
+                    <button class="btn" id="backFromSentence">Home</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Word Mode -->
+        <section id="view-word" class="view game">
+            <div class="hud">
+                <div class="score" id="wordStats">WPM: 0 | Accuracy: 100% | Time Left: 30s</div>
+            </div>
+            <div class="play-area">
+                <div id="wordDisplay" class="game-text">Press Start to Begin</div>
+                <textarea id="wordInput" placeholder="Type here..." disabled></textarea>
+                <div style="margin-top:12px;display:flex;gap:10px;justify-content:center;">
+                    <button id="wordStartBtn" class="btn primary">Start Test</button>
+                    <button class="btn" id="backFromWord">Home</button>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
